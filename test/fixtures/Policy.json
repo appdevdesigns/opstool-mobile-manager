@@ -1,0 +1,31 @@
+{
+  "auth": { 
+    "type":"CAS",
+    "options": {
+      "casURL":"/some/url/here"
+    }
+  },
+  "device": { 
+    "localStorage":false,
+    "requireEncryption":true,
+    "ios": {
+      "localStorage":true,
+      "requireEncryption":true
+    },
+    "android": {
+      "localStorage":false,
+      "requireEncryption":false
+    }
+  },
+  "policy": {
+    "login": {
+      "userCreate":false,
+      "saveLogin":true,
+      "saveTimelimit":0
+    },
+    "user": {
+      "language_code":"en",
+      "locale":"us"
+    }
+  }
+}

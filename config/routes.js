@@ -23,7 +23,7 @@ module.exports = {
   'get /*(^.*)' : 'opstool-mobile-manager/PluginController.profile'
 
   */
-
+    'get /mobile/policy' : 'opstool-mobile-manager/MobileController.policy'
 
 };
 
