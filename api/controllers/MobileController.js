@@ -27,7 +27,7 @@ module.exports = {
                     res.serverError(err);
                 } else {
                     policyFixtureData = JSON.parse(data);
-                    res.send(policyFixtureData);
+                    res.json(policyFixtureData);
                 }
             })
             

@@ -21,6 +21,8 @@ module.exports = {
 //        sync: serviceStack,
 //        logout:true
 //    }
-
+	'opstool-mobile-manager/MobileController':{
+		policy:[]
+	}
 
 };
