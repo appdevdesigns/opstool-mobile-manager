@@ -7,7 +7,11 @@
 var fs = require('fs');
 var path = require('path');
 
-var policyFixtureData = null;
+var policyFixtureData = {
+    auth: {
+        type: sails.config.appdev.authType
+    }
+};
 
 module.exports = {
 	_config: {
@@ -17,7 +21,7 @@ module.exports = {
         rest: true
     },
     
-    policy:function(req, res){
+    policy: function(req, res){
         if (policyFixtureData == null){
             
             var pathToFile = path.join(__dirname, "..", "..", "test", "fixtures", "Policy.json");
